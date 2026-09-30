@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Aurora Cakes — Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner"><a class="logo" href="index.html"><img src="assets/logo4.svg"
+                    alt="Aurora Cakes"><span>Aurora Cakes</span></a><button class="nav-toggle" id="navToggle">☰</button>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions"><button class="icon-btn" data-link="favorites.html"
+                    aria-label="Favorites">♡<span class="badge" id="favCount">0</span></button><button class="icon-btn"
+                    data-link="cart.html" aria-label="Cart">🛒<span class="badge"
+                        id="cartCount">0</span></button><button class="btn" data-link="account.html">Account</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div><span class="eyebrow">Freshly baked • Made with love</span>
+                    <h1>Little cakes.<br>Big happiness.</h1>
+                    <p>Discover handcrafted cupcakes and celebration cakes made for sweet moments, everyday cravings and
+                        special occasions.</p>
+                    <div class="hero-actions"><a class="btn primary" href="menu.html">Explore Menu</a><a class="btn"
+                            href="trending.html">See Trending</a></div>
+                </div>
+                <div class="hero-art"><img src="assets/cakelogo.png" alt="Aurora Cakes cupcakes"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Customer favourites</h2>
+                        <p class="section-subtitle">The cakes people keep coming back for.</p>
+                    </div><a class="btn" href="menu.html">View all</a>
+                </div>
+                <div class="carousel" id="homeProducts"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Why Aurora?</h2>
+                        <p class="section-subtitle">A simple sweet experience from browsing to pickup.</p>
+                    </div>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature"><span>🧁</span>
+                        <h3>Freshly made</h3>
+                        <p>Our menu is designed around fresh, tempting bakes that look as good as they taste.</p>
+                    </article>
+                    <article class="feature"><span>❤️</span>
+                        <h3>Save favourites</h3>
+                        <p>Heart your favourite cakes and find them again whenever the craving comes.</p>
+                    </article>
+                    <article class="feature"><span>🚚</span>
+                        <h3>Flexible pickup & delivery</h3>
+                        <p>Pick it up yourself, send someone, or choose door delivery during checkout.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Aurora Cakes</h3>
+                <p>Sweet treats for ordinary days and beautiful celebrations.</p>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <p><a href="menu.html">Menu</a><br><a href="trending.html">Trending</a><br><a
+                        href="favorites.html">Favorites</a><br><a href="cart.html">Cart</a></p>
+            </div>
+            <div>
+                <h3>Need help?</h3>
+                <p><a href="contact.html">Contact us</a><br><a href="account.html">My orders</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

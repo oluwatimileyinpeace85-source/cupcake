@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Aurora Cakes — Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner"><a class="logo" href="index.html"><img src="assets/logo4.svg"
+                    alt="Aurora Cakes"><span>Aurora Cakes</span></a>
+            <div class="header-actions"><button class="btn" data-link="cart.html">← Cart</button></div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="page-hero"><span class="eyebrow">Checkout</span>
+            <h1>Let's get your order sorted.</h1>
+            <p>Choose how you want to receive it, where it should go and how you'd like to pay.</p>
+        </section>
+        <div class="checkout-layout">
+            <form class="panel" id="checkoutForm">
+                <div class="checkout-section">
+                    <h3>1. Fulfilment</h3>
+                    <div class="choice-grid" id="fulfilmentChoices"><button type="button" class="choice active"
+                            data-fulfil="pickup"><strong>🛍 Pickup</strong><small>I'll collect it
+                                myself.</small></button><button type="button" class="choice"
+                            data-fulfil="someone"><strong>🤝 Someone else</strong><small>Another person will collect
+                                it.</small></button><button type="button" class="choice"
+                            data-fulfil="delivery"><strong>🚚 Door delivery</strong><small>Bring it to my
+                                location.</small></button></div>
+                </div>
+                <div class="checkout-section" id="someoneFields" hidden>
+                    <h3>Pickup person</h3>
+                    <div class="field"><label>Name</label><input id="pickupName" placeholder="Full name"></div>
+                    <div class="field"><label>Phone</label><input id="pickupPhone" placeholder="Phone number"></div>
+                </div>
+                <div class="checkout-section" id="deliveryFields" hidden>
+                    <h3>2. Delivery details</h3>
+                    <div class="field"><label>Location</label><select id="deliveryLocation">
+                            <option value="">Select your area</option>
+                            <option value="Ikeja">Ikeja — ₦2,000</option>
+                            <option value="Yaba">Yaba — ₦2,500</option>
+                            <option value="Surulere">Surulere — ₦2,500</option>
+                            <option value="Maryland">Maryland — ₦2,000</option>
+                            <option value="Lekki">Lekki — ₦3,500</option>
+                            <option value="Victoria Island">Victoria Island — ₦3,500</option>
+                        </select></div>
+                    <div class="field"><label>Full delivery address</label><textarea id="deliveryAddress"
+                            placeholder="House number, street, landmark..."></textarea></div>
+                </div>
+                <div class="checkout-section">
+                    <h3>3. Payment</h3>
+                    <div class="choice-grid"><button type="button" class="choice active"
+                            data-payment="transfer"><strong>🏦 Bank transfer</strong><small>Pay manually and we'll
+                                verify it.</small></button><button type="button" class="choice"
+                            data-payment="card"><strong>💳 Card</strong><small>Secure gateway
+                                placeholder.</small></button></div>
+                    <div class="payment-box active" id="transferBox">
+                        <div class="bank-details"><strong>Bank: Aurora Demo Bank</strong><br>Account Name: Aurora
+                            Cakes<br>Account Number: <strong>0123456789</strong><br><small class="muted">Replace these
+                                demo details with your real business account before launch.</small></div>
+                    </div>
+                    <div class="payment-box" id="cardBox">
+                        <div class="field"><label>Cardholder name</label><input id="cardName"
+                                placeholder="Name on card"></div>
+                        <div class="field"><label>Card number</label><input id="cardNumber" inputmode="numeric"
+                                maxlength="19" placeholder="0000 0000 0000 0000"></div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                            <div class="field"><label>Expiry</label><input id="cardExpiry" placeholder="MM/YY"></div>
+                            <div class="field"><label>CVV</label><input id="cardCvv" inputmode="numeric" maxlength="4"
+                                    placeholder="123"></div>
+                        </div>
+                        <p class="muted" style="font-size:1.2rem">Demo UI only. For real payments, connect
+                            Paystack/Flutterwave rather than storing card details in this frontend.</p>
+                    </div>
+                </div><button class="btn primary" style="width:100%;margin-top:1rem" type="submit">Place Order &
+                    Generate Receipt</button>
+            </form>
+            <aside class="panel" id="checkoutSummary"></aside>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

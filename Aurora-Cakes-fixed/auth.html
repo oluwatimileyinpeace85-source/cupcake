@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Cakes — Login</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <main class="auth-shell" id="authShell">
+    <section class="auth-left" aria-label="Aurora Cakes welcome">
+      <div class="left-content">
+        <img class="auth-logo" src="assets/logo4.svg" alt="Aurora Cakes logo">
+        <div class="welcome-copy">
+          <h1>WELCOME<br>BACK!</h1>
+          <p>Welcome to Aurora Cakes. Sign in to explore our delicious cupcakes and place your order.</p>
+        </div>  
+      </div>
+    </section>
+
+    <section class="auth-right" aria-label="Authentication">
+      <div class="form-wrap">
+        <div class="auth-form login-form" id="loginPanel">
+          <h2>Login</h2>
+          <p class="form-intro">Sign in to continue to Aurora Cakes</p>
+
+          <form id="loginForm" novalidate>
+            <label class="input-group">
+              <span>Email</span>
+              <div class="input-line">
+                <input type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                <span class="input-icon" aria-hidden="true">📧</span>
+              </div>
+            </label>
+
+            <label class="input-group">
+              <span>Password</span>
+              <div class="input-line">
+                <input type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                <button type="button" class="password-toggle" data-toggle-password aria-label="Show password">🔒</button>
+              </div>
+            </label>
+
+            <a class="forgot" href="#" id="forgotPassword">Forgot your password?</a>
+            <button class="auth-btn" type="submit">Login</button>
+            <p class="switch-text">Don't have an account? <button type="button" data-signup>Sign Up</button></p>
+            <p class="message" id="loginMessage" role="alert"></p>
+          </form>
+        </div>
+
+        <div class="auth-form signup-form" id="signupPanel" aria-hidden="true">
+          <h2>Sign Up</h2>
+          <p class="form-intro">Create your Aurora Cakes account</p>
+
+          <form id="signupForm" novalidate>
+            <label class="input-group">
+              <span>Full Name</span>
+              <div class="input-line">
+                <input type="text" name="name" placeholder="Enter your full name" autocomplete="name" required>
+                <span class="input-icon" aria-hidden="true">👤</span>
+              </div>
+            </label>
+
+            <label class="input-group">
+              <span>Email</span>
+              <div class="input-line">
+                <input type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                <span class="input-icon" aria-hidden="true">📧</span>
+              </div>
+            </label>
+
+            <label class="input-group">
+              <span>Password</span>
+              <div class="input-line">
+                <input type="password" name="password" placeholder="Create a password" minlength="6" autocomplete="new-password" required>
+                <button type="button" class="password-toggle" data-toggle-password aria-label="Show password">🔒</button>
+              </div>
+            </label>
+
+            <button class="auth-btn" type="submit">Create Account</button>
+            <p class="switch-text">Already have an account? <button type="button" data-login>Login</button></p>
+            <p class="message" id="signupMessage" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

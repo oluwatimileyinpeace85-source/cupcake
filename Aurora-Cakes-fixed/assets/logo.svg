@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="110" viewBox="0 0 420 110" role="img" aria-label="Aurora Cupcake logo">
+  <title>Aurora Cupcake</title>
+  <defs>
+    <linearGradient id="grad1" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff8ac6" />
+      <stop offset="0.5" stop-color="#ffcf6f" />
+      <stop offset="1" stop-color="#7be0c7" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" x2="1">
+      <stop offset="0" stop-color="#7be0c7" />
+      <stop offset="1" stop-color="#6fb3ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- cupcake base -->
+  <g transform="translate(12,10)">
+    <ellipse cx="40" cy="54" rx="36" ry="22" fill="#ffdce8" opacity="0.18"/>
+    <path d="M12 46c0-12 11-22 28-22s28 10 28 22v12H12V46z" fill="url(#grad1)" stroke="#ec9dbf" stroke-width="1"/>
+    <path d="M18 46c0-8 6-16 20-16s20 8 20 16v8H18v-8z" fill="white" opacity="0.18"/>
+
+    <!-- frosting with sprinkles -->
+    <path d="M10 36c8-14 32-20 50-12 18-8 42-2 50 12 0 0 2 8-6 12-8 4-42 8-44 8s-36-4-50-8c-8-2-8-12-0-12z" fill="url(#grad2)" stroke="#c7eaff" stroke-width="1"/>
+    <!-- sprinkles -->
+    <g>
+      <rect x="34" y="26" width="4" height="10" rx="2" fill="#ff6fb5" transform="rotate(-18 36 31)"/>
+      <rect x="58" y="24" width="4" height="10" rx="2" fill="#ffd166" transform="rotate(12 60 29)"/>
+      <rect x="46" y="30" width="4" height="10" rx="2" fill="#6fb3ff" transform="rotate(32 48 35)"/>
+      <rect x="26" y="30" width="4" height="10" rx="2" fill="#7be0c7" transform="rotate(-42 28 35)"/>
+    </g>
+
+    <!-- plate -->
+    <ellipse cx="40" cy="84" rx="38" ry="6" fill="#fff6f8" stroke="#f1dbe6"/>
+  </g>
+
+  <!-- text -->
+  <text x="110" y="70" font-family="Segoe UI, Roboto, Arial" font-size="34" font-weight="800" fill="#3a2b2b">Aurora Cupcake</text>
+</svg>
